@@ -5,13 +5,15 @@ import Sigin from '../src/pages/Sigin'
 import Signout from '../src/pages/Signout'
 import About from '../src/pages/About'
 import Profile from '../src/pages/Profile'
+import Header from './compoents/Header'
 function App() {
 
   return (
     <div>
+      <Header/>
       <Routes>
     <Route path='/' element={<Home/>}/>
-    <Route path='/sigin' element={<Sigin/>}/>
+    <Route path='/signin' element={<Sigin/>}/>
     <Route path='/signout' element={<Signout/>}/>
     <Route path='/about' element={<About/>}/>
     <Route path='/profile' element={<Profile/>}/>
